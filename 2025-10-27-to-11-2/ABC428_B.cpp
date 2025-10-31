@@ -11,6 +11,7 @@ int main(){
     for (int i = 0; i < n-k+1; i++){
         string t = s.substr(i, k);
         cnt[t]++;
+        // "substring" : ++
     }
 
     int x = 0;
