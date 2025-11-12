@@ -13,7 +13,7 @@ int main(){
     for (int i = 0; i < n-1; i++){
         int dist = 0;
 
-        for (int j = i+1; j < n; i++){
+        for (int j = i+1; j < n; j++){
             dist += v[j-1];
             cout << dist << ' ';
         }
