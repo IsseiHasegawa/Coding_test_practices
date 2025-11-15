@@ -8,7 +8,7 @@ int main(){
     int g = 0, m = 0;
 
     for (int i = 0; i < k; i++){
-        if (g == g){
+        if (g == G){
             g = 0;
         }
         else if (m == 0){
