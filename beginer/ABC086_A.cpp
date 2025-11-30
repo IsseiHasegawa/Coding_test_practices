@@ -4,15 +4,14 @@
 using namespace std;
 
 int main(){
-    string s;
-    cin >> s;
+   int a, b;
+   cin >> a >> b;
 
-    int cnt = 0;
-    for (int i = 0; i < s.size(); i++){
-        if (s[i] == '1'){
-            cnt++;
-        }
-    }
-
-    cout << cnt << endl;
+   int multi = a * b;
+   if (multi % 2 == 0){
+        cout << "Even" << endl;
+   }
+   else{
+    cout << "Odd" << endl;
+   }
 }

@@ -17,8 +17,8 @@ int main(){
         cin >> p;
         --p;
         x += w[p];
-        w[p] *= -1;
-        cout << x << end;:
+        w[p] *= -1; 
+        cout << x << endl;
     }
     return 0;
 }

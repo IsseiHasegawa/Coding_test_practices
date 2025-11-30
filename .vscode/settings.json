@@ -11,5 +11,10 @@
     "C_Cpp.intelliSenseEngine": "Disabled",
 
     // エラー表示だけ残す
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.associations": {
+        "iostream": "cpp",
+        "string": "cpp",
+        "valarray": "cpp"
+    }
 }
