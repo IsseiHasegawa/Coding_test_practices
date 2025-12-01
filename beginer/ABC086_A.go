@@ -1,4 +1,4 @@
-packege main
+package main
 
 import "fmt"
 
@@ -8,9 +8,8 @@ func main(){
 
 	var multiple int = a * b
 	if multiple % 2 == 0 {
-		fmt.Pringln("Even")
-	}
-	else{
+		fmt.Println("Even")
+	} else {
 		fmt.Println("Odd")
 	}
 }
