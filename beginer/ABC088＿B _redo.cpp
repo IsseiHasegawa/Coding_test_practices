@@ -11,14 +11,14 @@ int main(){
         cin >> V[i];
     }
     sort(V.begin(), V.end());
-    vector<int> A(N/2+1);
-    vector<int> B(N/2);
+    vector<int> A,B;
+    
     for (int i = 0; i < N; i++){
         if (i % 2 != 0){
-            V[i] = A[i];
+            A.push_back(V[i]);
         }
         else {
-            V[i] = B[i];
+            B.push_back(V[i]);
         }
     }
 
