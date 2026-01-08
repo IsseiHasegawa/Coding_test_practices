@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    do {
+        int a, b;
+        char op;
+        cin >> a >> op >> b;
+        if (op == '?'){
+            break;
+        } else if (op == '+') {
+            cout << a + b << endl;
+        } else if (op == '-') {
+            cout << a - b << endl;
+        } else if (op == '*') {
+            cout << a * b << endl;
+        } else if (op == '/') {
+            cout << a / b << endl;
+        } 
+
+    } while (false);
+
+    return 0;
+
+}
