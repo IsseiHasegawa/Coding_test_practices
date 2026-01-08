@@ -19,7 +19,7 @@ int main(){
             cout << a / b << endl;
         } 
 
-    } while (false);
+    } while (true);
 
     return 0;
 
