@@ -11,13 +11,16 @@ int main(){
         } else {
             for (int i = 0; i < a; i++){
                 for (int j = 0; j < b; j++){
-                    cout << "#";
+                    if (i == 0 || j == 0 || i+1 == a || j+1 == b){
+                        cout << "#";
+                    } else {
+                        cout << ".";
+                    }
                 }
                 cout << endl;
             }
+            cout << endl;
         }
-        cout << endl;
     }
-
     return 0;
 }
