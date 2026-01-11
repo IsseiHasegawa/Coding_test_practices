@@ -10,6 +10,7 @@ int main(){
 
         if (x % 3 == 0){
             cout << " " << i;
+            continue;
         }
 
         while (x) {
