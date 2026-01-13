@@ -13,14 +13,16 @@ int main(){
         count[b-1][f-1][r-1] += v;
     }
 
-    for (auto &a : count){
-        for (auto &b : a){
-            for (auto &c : b){
-                cout << c << " ";
+    for (int i = 0; i < 4; i++){
+        for (int j = 0; j < 3; j++){
+            for (int k = 0; k < 10; k++){
+                cout << " " << count[i][j][k];
             }
             cout << endl;
         }
-        cout << "####################" << endl;
+        if (i != 3){
+            cout << "####################" << endl;
+        }
     }
     return 0;
 }
