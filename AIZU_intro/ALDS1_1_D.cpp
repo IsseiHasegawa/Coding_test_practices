@@ -1,24 +1,26 @@
 #include <iostream>
-#include <vector>
+#include <algorithm>
 
 using namespace std;
+static const int MAX = 20000;
 
 int main(){
-    int n; 
+    int r[MAX];
+
+    int n;
     cin >> n;
-
-    vector<int> v(n);
-
     for (int i = 0; i < n; i++){
-        cin >> v[i];
+        cin >> r[i];
     }
 
-    int curr_max = 0;
-
-    for (int i = 0; i < n; i++){
-        if (v[i] > curr_max){
-            curr_max = v[i];
-        }
+    int maxv = -200000000;
+    int mini = r[0];
+    for (int i = 0; i < n;i++){
+        int maxv = max(r[i], r[i] - mini);
+        int mini = min(r[i], mini);
     }
+
+    cout << maxv << endl;
+
     return 0;
 }
