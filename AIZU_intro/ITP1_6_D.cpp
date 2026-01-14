@@ -13,10 +13,8 @@ int main(){
         }
     }
 
-    int b;
-    cin >> b;
-    int second_v[b-1];
-    for (int i = 0; i < b; i++){
+    int second_v[m];
+    for (int i = 0; i < m; i++){
         cin >> second_v[i];
     }
 
