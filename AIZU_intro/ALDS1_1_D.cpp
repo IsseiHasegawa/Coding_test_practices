@@ -2,7 +2,7 @@
 #include <algorithm>
 
 using namespace std;
-static const int MAX = 20000;
+static const int MAX = 200000;
 
 int main(){
     int r[MAX];
@@ -13,11 +13,11 @@ int main(){
         cin >> r[i];
     }
 
-    int maxv = -200000000;
+    int maxv = -2000000000;
     int mini = r[0];
-    for (int i = 0; i < n;i++){
-        int maxv = max(r[i], r[i] - mini);
-        int mini = min(r[i], mini);
+    for (int i = 1; i < n;i++){
+        maxv = max(maxv, r[i] - mini);
+        mini = min(r[i], mini);
     }
 
     cout << maxv << endl;
