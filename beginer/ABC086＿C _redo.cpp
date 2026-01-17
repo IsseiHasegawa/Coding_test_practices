@@ -8,7 +8,7 @@ int main(){
     int t[110000], x[110000], y[110000];
     t[0] = x[0] = y[0] = 0;
     for (int i = 0; i < N; i++){
-        t[i+1] >> x[i+1]>> y[i+1];
+        cin >> t[i+1] >> x[i+1]>> y[i+1];
     }
 
     bool can = true;

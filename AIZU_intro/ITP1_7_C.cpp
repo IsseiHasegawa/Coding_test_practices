@@ -8,7 +8,7 @@ int main(){
     cin >> r >> c;
     vector<vector<int>> v(r+1, vector<int> (c+1, 0));
 
-    for (int i = 0; i < r; r++){
+    for (int i = 0; i < r; i++){
         for (int j = 0; j < c; j++){
             cin >> v[i][j];
         }
