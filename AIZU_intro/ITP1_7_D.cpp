@@ -7,9 +7,9 @@ int main(){
     int n, m, l;
     cin >> n >> m >> l;
 
-    vector<vector<int>> v1(n, vector<int>(m, 0));
-    vector<vector<int>> v2(m, vector<int>(l, 0));
-    vector<vector<int>> newV(n, vector<int>(l, 0));
+    vector<vector<long long>> v1(n, vector<long long>(m, 0));
+    vector<vector<long long>> v2(m, vector<long long>(l, 0));
+    vector<vector<long long>> newV(n, vector<long long>(l, 0));
 
     for (int i = 0; i < n; i++){
         for (int j = 0; j < m; j++){
@@ -25,7 +25,7 @@ int main(){
 
     for (int i = 0; i < n; i++){
         for (int j = 0; j < l; j++){
-            int sum = 0;
+            long long sum = 0;
             for (int k = 0; k < m; k++){
                 sum += v1[i][k] * v2[k][j];
             }
@@ -35,9 +35,13 @@ int main(){
 
     for (int i = 0; i < n; i++){
         for (int j = 0; j < l; j++){
-            cout << newV[i][j] << " ";
+            if (j != l-1){
+                cout << newV[i][j] << " ";
+            } else {
+                cout << newV[i][j] << endl;
+            }
+            
         }
-        cout << endl;
     }
 
     return 0;
